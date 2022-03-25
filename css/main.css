@@ -5,10 +5,10 @@
 
 body{
     margin: 0px 20px;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: #fcf7ee;
     box-sizing: border-box;
-    color: #515151;
+    color: #34373B;
 }
 
 .navbar{
@@ -89,10 +89,15 @@ nav>div{
     transform: translate(20px, -30px);
 }
 
+h1{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    margin-top: -50px;
+}
+
 
 p{
     font-family: sans-serif 'Helvetica', sans-serif;
-    color: #34373B;
     font-size: 16px;
 
 }
@@ -140,6 +145,13 @@ input[type=text]{
       display: flex;
   }
 
+  .help-call{
+      display: block; 
+      color: black; 
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+  }
+
   
 
   /* 
@@ -160,6 +172,7 @@ input[type=text]{
     .stack-wrapper{
         position: relative;
         display: flex;
+        transform: scale(1, 1);
         justify-content: center;
         align-items: center;
     }
@@ -198,6 +211,17 @@ input[type=text]{
         margin-bottom: 50px;
         margin-top: 20px;
     }
+
+    h1{
+        margin-top: 0px;
+    }
+
+    p{
+        font-family: sans-serif 'Helvetica', sans-serif;
+        color: #34373B;
+        font-size: 16px;
+    
+    }
 }
 
 
@@ -210,10 +234,6 @@ input[type=text]{
 
     body{
         margin: 0px 80px;
-        font-family: sans-serif;
-        background-color: #fcf7ee;
-        box-sizing: border-box;
-        color: #515151;
     }
 
     .menu{
@@ -245,7 +265,7 @@ input[type=text]{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-top: 100px;
+        margin-top: 120px;
         position: relative;
 
     }
@@ -265,6 +285,7 @@ input[type=text]{
 
     h1{
         font-size: 50px;
+        margin-top: 0px;
     }
 
     p{
