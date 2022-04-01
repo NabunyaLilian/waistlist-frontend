@@ -1,0 +1,52 @@
+/* Mobile styles */
+
+footer{
+    font-family: sans-serif 'Helvetica', sans-serif;
+    color: #34373B;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .social-container{
+    display: flex;
+  }
+
+  .help-container{
+      display: flex;
+  }
+
+  .help-call{
+      display: block; 
+      color: black; 
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+  }
+
+
+
+
+  /* Tablet styles */
+  @media only screen and (min-wdith: 768px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+  }
+
+
+  
+
+  /* Desktop styles */
+  @media only screen and (min-width: 1020px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+  }

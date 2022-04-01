@@ -13,76 +13,10 @@ body{
     font-size: 18px;
 }
 
-.navbar{
-    width: 100%;
-}
-
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-nav>div{
-    display: inline-block;
-}
-
-.link{
-    display: inline-block;
-    background-image: linear-gradient(to right, #EAB251, #E95175);
-    text-align: center;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 12px;
-    padding: 8px 10px;
-    color: white;
-    margin-left: 5px;
-    vertical-align: top;
-}
-
-.signin-wrapper{
-    display: none;
-}
-
-.menu{
-    display: none;
-}
-
-.stack-wrapper{
-    position: relative;
-    display: flex;
-    transform: scale(0.55, 0.6);
-    justify-content: center;
-}
-
-.photo1{
-    position: absolute;
-    transform: translate(20px, -30px) rotate(-45deg);
-}
-
-
-.photo2{
-    position: absolute;
-    transform: translate(20px, -30px) rotate(-30deg);
-}
-
-.photo3{
-    position: absolute;
-    transform: translate(20px, -30px) rotate(-15deg);
-
-}
-
-.photo4{
-    transform: translate(20px, -30px);
-}
 
 h1{
     font-family: 'Playfair Display', serif;
     color: black;
-    margin-top: -50px;
 }
 
 
@@ -90,60 +24,13 @@ p{
     font-family: sans-serif 'Helvetica', sans-serif;
     line-height: 1.7rem;
     font-size: 16px;
+}
 
+div{
+    overflow: hidden;
 }
 
 
-input[type=text]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  input[type=submit] {
-    width: 100%;
-    background-color: #4977EA;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .text-subscribe{
-      display: flex;
-  }
-
-  footer{
-    font-family: sans-serif 'Helvetica', sans-serif;
-    color: #34373B;
-    font-size: 16px;
-  }
-
-  .social-container{
-    display: flex;
-    margin-top: 40px;
-  }
-
-  .help-container{
-      margin-top: 50px;
-      display: flex;
-  }
-
-  .help-call{
-      display: block; 
-      color: black; 
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-  }
-
-  
 
   /* 
     tablet styles
@@ -151,60 +38,6 @@ input[type=text]{
   */
 
 @media only screen and (min-width:768px){
-    
-    .menu{
-        display: none;
-    }
-
-    main{
-        margin-top: 100px;
-    }
-
-    .stack-wrapper{
-        position: relative;
-        display: flex;
-        transform: scale(1, 1);
-        justify-content: center;
-        align-items: center;
-    }
-
-    form{
-        width: 85%;
-    }
-
-    input[type=text]{
-        padding: 12px 25px;
-        width: 50%;
-        height: 60px;
-        font-size: 16px;
-        margin-right: 10px;
-        display: inline-block;
-        border: 1px solid white;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-    
-      input[type=submit] {
-        background-color: #4977EA;
-        color: white;
-        margin-left: 30px;
-        height: 60px;
-        width: 30%;
-        font-size: 16px;
-        margin: 8px 0;
-        border: none;
-        text-align: center;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-    footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-top: 20px;
-    }
 
     h1{
         margin-top: 0px;
@@ -219,6 +52,8 @@ input[type=text]{
 }
 
 
+
+
 /* 
     Laptop styles
 
@@ -227,70 +62,7 @@ input[type=text]{
 @media only screen and (min-width:1024px){
 
     body{
-        margin: 0px 80px;
-    }
-
-    .logo{
-        width: 110px;
-    }
-
-    .menu{
-        display: block;
-    }
-
-    ul{
-        list-style-type: none;
-    }
-    
-    li{
-        display: inline-block;
-    }
-    
-    li a{
-        text-decoration: none;
-        padding-right: 15px;
-    }
-
-    .btn{
-        background-color: #4977EA;
-        color: white;
-        padding: 20px 20px;
-        margin: 8px 0;
-        border: none;
-        font-size: 16px;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-left: 10px;
-    }
-
-    .signin-wrapper{
-        display: block;
-    }
-
-    .menu-icon{
-        display: none;
-    }
-
-    main{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-top: 120px;
-        position: relative;
-
-    }
-
-    .headline{
-        flex: 30%;
-    }
-
-    .stack-wrapper{
-        flex: 40%;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        right: 20px;
+        margin: 0px 40px;
     }
 
     h1{
@@ -301,43 +73,5 @@ input[type=text]{
     p{
         padding-right: 50px;
     }
-
-    form{
-        width: 100%;
-    }
-
-    input[type=text]{
-        padding: 12px 25px;
-        width: 60%;
-        height: 60px;
-        font-size: 16px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid white;
-        border-radius: 4px;
-        margin-right: 10px;
-        color: #34373B;
-        box-sizing: border-box;
-      }
-    
-      input[type=submit] {
-        background-color: #4977EA;
-        color: white;
-        text-align: center;
-        padding: 10px 10px;
-        height: 60px;
-        width: 30%;
-        font-size: 16px;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      footer{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 50px;
-          margin-top: 20px;
-      }
 }
 
