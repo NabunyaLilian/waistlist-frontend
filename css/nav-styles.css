@@ -4,12 +4,21 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-direction: column;
     margin-bottom: 20px;
     align-items: center;
 }
 
 nav>div{
     display: inline-block;
+}
+
+.main-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .link{
@@ -25,6 +34,14 @@ nav>div{
     vertical-align: top;
 }
 
+#menu{
+    width: 100%;
+}
+
+.link:hover{
+    background-image: linear-gradient(to right, #E95175, #E95175);
+}
+
 .signin-wrapper{
     display: none;
 }
@@ -33,11 +50,45 @@ nav>div{
     display: none;
 }
 
+ul{ 
+    border: 2px solid white;
+    background-color: white;
+    list-style-type: none;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    z-index: 5;
+    left: 37%;
+    top: 30px;
+    box-shadow: 0 4px 4px 0 rgba(163, 162, 162, 0.2), 0 0px 4px 0 rgba(168, 167, 167, 0.19);
+}
+
+li{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a:active{
+    border-right: 2px solid #E95175 ;
+}
+
+li a{
+    text-decoration: none;
+    color: #34373B;
+    padding-right: 8px;
+    font-size: 16px;
+}
+
 
 /* Tablet styles */
 @media only screen and (min-width: 768px){
     .menu{
         display: none;
+    }
+
+    ul{ 
+        width: 20%;
+        left: 74%;
     }
 
 }
@@ -49,21 +100,47 @@ nav>div{
         width: 110px;
     }
 
-    .menu{
-        display: block;
+    nav{
+        flex-direction: row;
     }
 
-    ul{
+
+    #menu{
+        display: block;
+        width: 40%;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    .main-nav{
+        width: 30%;
+    }
+
+    ul{ 
+        border: none;
+        background-color: transparent;
         list-style-type: none;
+        width: auto;
+        list-style-type: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        box-shadow: none;
     }
     
     li{
         display: inline-block;
+        justify-content: center;
     }
+
     
     li a{
         text-decoration: none;
+        color: #34373B;
         padding-right: 15px;
+        font-size: 18px;
     }
 
     .btn{
@@ -78,12 +155,17 @@ nav>div{
         margin-left: 10px;
     }
 
+    .btn:hover{
+        background-color: #5e87eeed;
+    }
+
+    a{
+        text-decoration: none;
+        color: #34373B;
+        padding-right: 15px;
+    }
+
     .signin-wrapper{
         display: block;
     }
-
-    .menu-icon{
-        display: none;
-    }
-
 }

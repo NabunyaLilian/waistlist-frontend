@@ -24,26 +24,29 @@
         <div class="navbar"> <!--nav bar-->
             <nav>
                <div class="main-nav">
-                    <img src="images/logo.svg" class="logo" style="margin-right: 5px;">
-                    <a href="#" class="link">Hosterr is hiring!</a>
+                    <div>
+                       <a href="/"><img src="images/logo.svg" class="logo" style="margin-right: 5px;"></a>
+                       <a href="#" class="link">Hosterr is hiring!</a>
+                    </div>
+                    <div>
+                        <a class="menu-icon">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
                </div>
 
-               <div class="menu">
+               <div id="menu" class="menu">
                 <ul>
-                    <li><a>Plans</a></li>
-                    <li><a>Find Domain</a></li>
-                    <li><a>Why Hosterr</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Find Domain</a></li>
+                    <li><a href="#">Why Hosterr</a></li>
                 </ul>
                </div>
 
                 <div class="signin-wrapper">
-                    <span class = "sign-in">Sign in</span>
+                    <a href="#"><span class = "sign-in">Sign in</span></a>
                     <button class="btn">Join Waistlist</button>
                 </div>
-
-                <a class="menu-icon">
-                    <i class="fa fa-bars"></i>
-                </a>
             </nav>
         </div> <!--end of navbar-->
 
@@ -83,5 +86,6 @@
             </div>
         </footer> <!--end of footer-->
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
